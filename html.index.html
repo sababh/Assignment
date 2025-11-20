@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="saba Bahabri" content="assimgment2">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🌤️ Weather App</h1>
+
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search for a city (e.g., Riyadh, Dubai, Cairo)">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loading" class="loading hidden">Loading weather data...</div>
+    <div id="error" class="error hidden"></div>
+
+    <div id="weatherCard" class="weather-card hidden">
+        <h2 id="cityName"></h2>
+        <div class="temperature">
+            <span id="temp" class="temp-value"></span>
+            <span class="temp-unit">°C</span>
+        </div>
+        <p id="weatherDesc" class="weather-description"></p>
+
+        <div class="weather-details">
+            <div class="detail-item">
+                <span class="detail-label">💨 Wind Speed</span>
+                <span id="windSpeed" class="detail-value"></span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">💧 Humidity</span>
+                <span id="humidity" class="detail-value"></span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">🌡️ Feels Like</span>
+                <span id="feelsLike" class="detail-value"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
